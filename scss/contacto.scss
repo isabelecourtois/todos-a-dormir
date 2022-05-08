@@ -1,0 +1,152 @@
+/* Inicia estilos Contacto */
+.contacto {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.contacto-header {
+    grid-area: header;
+}
+.contacto-main {
+    grid-area: main;
+}
+.contacto-footer {
+    grid-area: footer;
+}
+.contacto-header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "conlogo connav connav"; 
+}
+.contacto-logo{
+    grid-area: conlogo;
+}
+.contacto-nav {
+    grid-area: connav;
+    font-size: 20px;
+    font-family: fantasy;
+    } 
+        .contacto-nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 20px;
+        }
+        .contacto-nav-li{
+            padding: 0 10px;
+        }
+            .contacto-nav-li a {
+                color: $color-principal;
+                text-decoration: none;
+                transition: all, .8s, ease-in-out;
+            }
+            .contacto-nav-li a:hover {
+                color: #FFB2A6;
+            }
+    .contacto-main{
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+        "h1"
+        "p"
+        "form";
+    }
+    .contacto-main h1{
+        grid-area: h1;
+        color: $color-principal;
+        font-family: comfortaa;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .contacto-main p{
+        grid-area: p;
+        color: gray;
+        font-family: comfortaa;
+        font-size: 18px;
+        line-height: 2;
+        text-align: center;
+    }
+    .contacto-main h2{
+        color: gray;
+        font-family: comfortaa;
+        font-size: 20px;
+        line-height: 2;
+        text-align: center;
+
+    }
+    .contacto-form{
+        grid-area: form;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto-form-input{
+        font-size: 18px;
+        height: 40px;
+        width: 400px;
+        border-style: none;
+        border-radius: 6px;
+        line-height: 40px;
+        background-color: #ffb2a64f;
+        margin: 10px;
+    }
+    .contacto-form-label{
+        font-size: 18px;
+        color: grey;
+        margin: 20px;
+    }
+    .contacto-form button{
+        font-size: 18px;
+        height: 40px;
+        width: 200px;
+        margin: 20px;
+        background-color:$color-principal;
+        color: white;
+        border-style: none;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .contacto-footer{
+        font-size: 20px;
+        color: gray;
+        background-color: #ffb2a691;
+        margin: 10px 50px;
+        padding: 5px 10px 50px 10px;
+     }
+        .contacto-footer-h2{
+            color: white;
+            text-shadow: gray 0.1em 0.1em 0.2em;
+            text-align: center;
+        }
+        .contacto-footer-form{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .contacto-footer-form input{
+                font-size: 18px;
+                height: 40px;
+                width: 200px;
+                border-style: none;
+                border-radius: 6px;
+                line-height: 40px;
+            }
+            .contacto-footer-form button{
+                font-size: 18px;
+                height: 40px;
+                width: 200px;
+                background-color:$color-principal;
+                color: white;
+                border-style: none;
+                border-radius: 6px;
+                text-align: center;
+            }
+/* Fin de estilos contacto */

@@ -1,0 +1,134 @@
+/* Inicia estilos sobre mi */
+.yo {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+.yo-header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+    "yologo yonav" ;
+}
+.yo-main {
+    grid-area: main;
+}
+.yo-footer {
+    grid-area: footer;
+}
+    .yo-logo{
+        grid-area: yologo;
+    }
+    .yo-nav {
+        grid-area: yonav;
+        font-size: 20px;
+        font-family: fantasy;
+        } 
+            .yo-nav ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 0 20px;
+            }
+            .yo-nav-li{
+                padding: 0 10px;
+            }
+                .yo-nav-li a {
+                    color: $color-principal;
+                    text-decoration: none;
+                    transition: all, .8s, ease-in-out;
+                }
+                .yo-nav-li a:hover {
+                    color: #FFB2A6;
+                }
+    .yo-main{
+        display: grid;
+        grid-template-areas: 
+        "yop" 
+        "yoimg"
+        "yofotos";
+    }
+        .yo-main-p{
+            grid-area: yop;
+        }
+            .yo-main-p h1{
+                color: $color-principal;
+                font-family: comfortaa;
+                font-size: 40px;
+                text-align: center;
+            }
+            .yo-main-p h2{
+                color: gray;
+                font-family: comfortaa;
+                font-size: 25px;
+                text-align: center;
+            }
+            .yo-main-p p{
+                text-align: center;
+                color:gray;
+                font-size: 18px;
+                line-height: 2;
+                margin: 0 10px;
+            }
+        .yo-main-caro1{
+            grid-area: yoimg;
+        }
+        .yo-main-caro1 img{
+            width: 300px;
+            height: auto;
+            object-fit: contain;
+        }
+        .yo-main-fotos{
+            grid-area:yofotos ;
+            display: flex;
+            flex-direction: row;
+            padding: 40px 0;
+            border-top:dashed ;
+            border-color: gray;
+        }
+        .yo-main-fotos img{
+            max-width: 25%;
+            height: auto;
+            object-fit: contain;
+        }
+        .yo-footer{
+            font-size: 20px;
+            color: gray;
+            background-color: #ffb2a691;
+            margin: 10px 50px;
+            padding: 5px 10px 50px 10px;
+         }
+            .yo-footer-h2{
+                color: white;
+                text-shadow: gray 0.1em 0.1em 0.2em;
+                text-align: center;
+            }
+            .yo-footer-form{
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+                .yo-footer-form input{
+                    font-size: 18px;
+                    height: 40px;
+                    width: 200px;
+                    border-style: none;
+                    border-radius: 6px;
+                    line-height: 40px;
+                }
+                .yo-footer-form button{
+                    font-size: 18px;
+                    height: 40px;
+                    width: 200px;
+                    background-color:$color-principal;
+                    color: white;
+                    border-style: none;
+                    border-radius: 6px;
+                    text-align: center;
+                }
+/* Fin de estilos sobre mi */

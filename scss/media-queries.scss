@@ -1,0 +1,140 @@
+/* Inicia media queries 425px */
+@media screen and (min-width:425px){
+    /* inicia home */
+    .home-insc-form input{
+        width: 250px;
+    }
+    .home-insc-form button{
+        width: 250px;
+    }
+    /* termina home */
+    /* Inicia M05 */
+    .m05-footer-form input{
+        width: 300px;
+    }
+    .m05-footer-form button{
+        width: 300px;
+    }
+    /* Fin m05 */  
+
+    /* Inicio Contacto */
+    .contacto-footer-form input{
+        width: 300px;
+    }
+    .contacto-footer-form button{
+        width: 300px;
+    }
+    /* Inicia Sobre mi */
+    .yo-footer-form input{
+        width: 300px;
+    }
+    .yo-footer-form button{
+        width: 300px;
+    }
+}
+/* Fin media queries 425px */
+
+/* Inicia media queries 768px */
+@media screen and (min-width:768px){
+    /* inicia home */
+    .home-nav ul {
+        padding: 20px; 
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+    .home-soy-box{
+            flex-direction: row;
+    }
+    .home-insc-form input{
+        width: 400px;
+    }
+    .home-insc-form button{
+        width: 400px;
+    }
+    /*Termina home */
+    /* Inicia Blog */
+    .blog-nav ul {
+        padding: 20px; 
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+    /* Termina Blog */
+
+    /* Inicia M05 */
+    .m05-nav ul {
+        padding: 20px; 
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+    .m05-footer-form input{
+        width: 400px;
+    }
+    .m05-footer-form button{
+        width: 400px;
+    }
+    /* Fin m05 */
+
+    /* Inicia Contacto */
+    .contacto-nav ul {
+        padding: 20px; 
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+    .contacto-footer-form input{
+        width: 400px;
+    }
+    .contacto-footer-form button{
+        width: 400px;
+    }
+    .contacto-main{
+        display: grid;
+        grid-template-areas: 
+        "h1 h1"
+        "p form ";
+    }
+    /* Inicia Sobre Mi */
+    .yo-main{
+        display: grid;
+        grid-template-areas: 
+        "yop yop yoimg" 
+        "yofotos yofotos yofotos";
+    }
+    .yo-main-caro1{
+        display: flex;
+        justify-content: flex-end;
+        align-content:flex-end
+    }
+    .yo-main-caro1 img{
+        width: 300px;
+    }
+    .yo-footer-form input{
+        width: 400px;
+    }
+    .yo-footer-form button{
+        width: 400px;
+    }
+    .yo-main-p h1{
+        font-size: 60px;
+    }
+    .yo-main-p h2{
+        font-size: 30px;
+    }
+    
+}
+/* Fin media queries 768px */
+
+/* Inicia media queries 768px */
+@media screen and (min-width:1024px){
+    /* Inicia Sobre mi */
+    .yo-main-caro1 img{
+        width: 400px;
+    }
+}

@@ -1,0 +1,110 @@
+/* Inicio estilos 0-5meses CSS */
+.m05 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.m05-footer {
+    grid-area: footer;
+}
+.m05-header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "m05logo m05nav m05nav"; 
+}
+.m05-logo{
+    grid-area: m05logo;
+}
+.m05-nav {
+    grid-area: m05nav;
+    font-size: 20px;
+    font-family: fantasy;
+
+         ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 20px;
+        }
+    }
+        .m05-nav-li{
+            padding: 0 10px;
+        }
+            .m05-nav-li a {
+                color: $color-principal;
+                text-decoration: none;
+                transition: all, .8s, ease-in-out;
+            }
+            .m05-nav-li a:hover {
+                color: #FFB2A6;
+            }
+.m05-main {
+    grid-area: main;
+}
+.m05-main h1{
+    text-align: center;
+    font-size: 35px;
+    color: grey;
+    margin-top: 50px;
+}
+    .m05-main h2 {
+        color: $color-principal;
+        text-align: center;
+        border-right: solid;
+        width: 200px;
+    }
+    .m05-main h3 {
+        color: gray;
+        text-align: center;
+        width: 200px;
+    }
+    .m05-main p{
+        font-size: 17px;
+        font-family: "comfortaa";
+        color: gray;
+        margin: 15px;
+        line-height: 2;
+    }
+    .m05-footer{
+        font-size: 20px;
+        color: gray;
+        background-color: #ffb2a691;
+        margin: 10px 50px;
+        padding: 5px 10px 50px 10px;
+     }
+        .m05-footer-h2{
+            color: white;
+            text-shadow: gray 0.1em 0.1em 0.2em;
+            text-align: center;
+        }
+        .m05-footer-form{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .m05-footer-form input{
+                font-size: 18px;
+                height: 40px;
+                width: 200px;
+                border-style: none;
+                border-radius: 6px;
+                line-height: 40px;
+            }
+            .m05-footer-form button{
+                font-size: 18px;
+                height: 40px;
+                width: 200px;
+                background-color: $color-principal;
+                color: white;
+                border-style: none;
+                border-radius: 6px;
+                text-align: center;
+            }
+/* Fin de estilos 0-5 Meses */

@@ -189,13 +189,9 @@
             line-height: 40px;
         }
         .home-insc-form button{
-            font-size: 18px;
-            height: 40px;
-            width: 180px;
+            @extend input;
             background-color: $color-principal;
             color: white;
-            border-style: none;
-            border-radius: 6px;
             text-align: center;
         }
 .footer{

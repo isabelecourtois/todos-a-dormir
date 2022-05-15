@@ -167,7 +167,7 @@
   justify-content: space-around;
   align-items: center; }
 
-.home-insc-form input {
+.home-insc-form input, .home-insc-form button {
   font-size: 18px;
   height: 40px;
   width: 180px;
@@ -176,13 +176,8 @@
   line-height: 40px; }
 
 .home-insc-form button {
-  font-size: 18px;
-  height: 40px;
-  width: 180px;
   background-color: #FF8AAE;
   color: white;
-  border-style: none;
-  border-radius: 6px;
   text-align: center; }
 
 .footer {
@@ -353,7 +348,7 @@
   justify-content: space-around;
   align-items: center; }
 
-.m05-footer-form input {
+.m05-footer-form input, .m05-footer-form .home-insc-form button, .home-insc-form .m05-footer-form button {
   font-size: 18px;
   height: 40px;
   width: 200px;
@@ -480,7 +475,7 @@
   justify-content: space-around;
   align-items: center; }
 
-.yo-footer-form input {
+.yo-footer-form input, .yo-footer-form .home-insc-form button, .home-insc-form .yo-footer-form button {
   font-size: 18px;
   height: 40px;
   width: 200px;
@@ -624,7 +619,7 @@
   justify-content: space-around;
   align-items: center; }
 
-.contacto-footer-form input {
+.contacto-footer-form input, .contacto-footer-form .home-insc-form button, .home-insc-form .contacto-footer-form button {
   font-size: 18px;
   height: 40px;
   width: 200px;
@@ -644,33 +639,33 @@
 
 /* Fin de estilos contacto */
 /* Inicia media queries 425px */
-@media screen and (min-width: 425px) {
+@media (min-width: 425px) {
   /* inicia home */
-  .home-insc-form input {
+  .home-insc-form input, .home-insc-form button {
     width: 250px; }
   .home-insc-form button {
     width: 250px; }
   /* termina home */
   /* Inicia M05 */
-  .m05-footer-form input {
+  .m05-footer-form input, .m05-footer-form .home-insc-form button, .home-insc-form .m05-footer-form button {
     width: 300px; }
   .m05-footer-form button {
     width: 300px; }
   /* Fin m05 */
   /* Inicio Contacto */
-  .contacto-footer-form input {
+  .contacto-footer-form input, .contacto-footer-form .home-insc-form button, .home-insc-form .contacto-footer-form button {
     width: 300px; }
   .contacto-footer-form button {
     width: 300px; }
   /* Inicia Sobre mi */
-  .yo-footer-form input {
+  .yo-footer-form input, .yo-footer-form .home-insc-form button, .home-insc-form .yo-footer-form button {
     width: 300px; }
   .yo-footer-form button {
     width: 300px; } }
 
 /* Fin media queries 425px */
 /* Inicia media queries 768px */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   /* inicia home */
   .home-nav ul {
     padding: 20px;
@@ -680,7 +675,7 @@
     justify-content: flex-end; }
   .home-soy-box {
     flex-direction: row; }
-  .home-insc-form input {
+  .home-insc-form input, .home-insc-form button {
     width: 400px; }
   .home-insc-form button {
     width: 400px; }
@@ -700,7 +695,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end; }
-  .m05-footer-form input {
+  .m05-footer-form input, .m05-footer-form .home-insc-form button, .home-insc-form .m05-footer-form button {
     width: 400px; }
   .m05-footer-form button {
     width: 400px; }
@@ -712,7 +707,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end; }
-  .contacto-footer-form input {
+  .contacto-footer-form input, .contacto-footer-form .home-insc-form button, .home-insc-form .contacto-footer-form button {
     width: 400px; }
   .contacto-footer-form button {
     width: 400px; }
@@ -729,7 +724,7 @@
     align-content: flex-end; }
   .yo-main-caro1 img {
     width: 300px; }
-  .yo-footer-form input {
+  .yo-footer-form input, .yo-footer-form .home-insc-form button, .home-insc-form .yo-footer-form button {
     width: 400px; }
   .yo-footer-form button {
     width: 400px; }

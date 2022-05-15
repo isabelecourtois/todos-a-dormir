@@ -1,5 +1,22 @@
+// Mapa de Media Queries
+
+$breakpoints: (
+  celular: 425px,
+  tablet: 768px,
+  compu: 1024px  
+);
+
+@mixin breakpoint($dispositivo) {
+  
+    @if map-has-key($breakpoints, $dispositivo) {
+      @media (min-width: #{map-get($breakpoints, $dispositivo)}) {
+        @content;
+      }
+    } 
+  }
+
 /* Inicia media queries 425px */
-@media screen and (min-width:425px){
+@include breakpoint(celular) {
     /* inicia home */
     .home-insc-form input{
         width: 250px;
@@ -35,7 +52,7 @@
 /* Fin media queries 425px */
 
 /* Inicia media queries 768px */
-@media screen and (min-width:768px){
+@include breakpoint(tablet) {
     /* inicia home */
     .home-nav ul {
         padding: 20px; 

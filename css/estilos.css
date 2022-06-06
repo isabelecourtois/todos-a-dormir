@@ -715,9 +715,12 @@
     display: grid;
     grid-template-areas: "h1 h1" "p form "; }
   /* Inicia Sobre Mi */
+  .yo-nav ul {
+    flex-direction: row;
+    justify-content: flex-end; }
   .yo-main {
     display: grid;
-    grid-template-areas: "yop yop yoimg"  "yofotos yofotos yofotos"; }
+    grid-template-areas: "yop yop yoimg" "yofotos yofotos yofotos"; }
   .yo-main-caro1 {
     display: flex;
     justify-content: flex-end;
@@ -734,7 +737,7 @@
     font-size: 30px; } }
 
 /* Fin media queries 768px */
-/* Inicia media queries 768px */
+/* Inicia media queries 1024px */
 @media screen and (min-width: 1024px) {
   /* Inicia Sobre mi */
   .yo-main-caro1 img {

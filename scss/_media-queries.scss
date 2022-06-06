@@ -1,157 +1,194 @@
 // Mapa de Media Queries
 
 $breakpoints: (
-  celular: 425px,
-  tablet: 768px,
-  compu: 1024px  
+    celular: 425px,
+    tablet: 768px,
+    compu: 1024px
 );
 
 @mixin breakpoint($dispositivo) {
-  
+
     @if map-has-key($breakpoints, $dispositivo) {
-      @media (min-width: #{map-get($breakpoints, $dispositivo)}) {
-        @content;
-      }
-    } 
-  }
+        @media (min-width: #{map-get($breakpoints, $dispositivo)}) {
+            @content;
+        }
+    }
+}
 
 /* Inicia media queries 425px */
 @include breakpoint(celular) {
+
     /* inicia home */
-    .home-insc-form input{
+    .home-insc-form input {
         width: 250px;
     }
-    .home-insc-form button{
+
+    .home-insc-form button {
         width: 250px;
     }
+
     /* termina home */
     /* Inicia M05 */
-    .m05-footer-form input{
+    .m05-footer-form input {
         width: 300px;
     }
-    .m05-footer-form button{
+
+    .m05-footer-form button {
         width: 300px;
     }
-    /* Fin m05 */  
+
+    /* Fin m05 */
 
     /* Inicio Contacto */
-    .contacto-footer-form input{
+    .contacto-footer-form input {
         width: 300px;
     }
-    .contacto-footer-form button{
+
+    .contacto-footer-form button {
         width: 300px;
     }
+
     /* Inicia Sobre mi */
-    .yo-footer-form input{
+    .yo-footer-form input {
         width: 300px;
     }
-    .yo-footer-form button{
+
+    .yo-footer-form button {
         width: 300px;
     }
 }
+
 /* Fin media queries 425px */
 
 /* Inicia media queries 768px */
 @include breakpoint(tablet) {
+
     /* inicia home */
     .home-nav ul {
-        padding: 20px; 
+        padding: 20px;
         font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        }
-    .home-soy-box{
-            flex-direction: row;
     }
-    .home-insc-form input{
+
+    .home-soy-box {
+        flex-direction: row;
+    }
+
+    .home-insc-form input {
         width: 400px;
     }
-    .home-insc-form button{
+
+    .home-insc-form button {
         width: 400px;
     }
+
     /*Termina home */
     /* Inicia Blog */
     .blog-nav ul {
-        padding: 20px; 
+        padding: 20px;
         font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        }
+    }
+
     /* Termina Blog */
 
     /* Inicia M05 */
     .m05-nav ul {
-        padding: 20px; 
+        padding: 20px;
         font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        }
-    .m05-footer-form input{
+    }
+
+    .m05-footer-form input {
         width: 400px;
     }
-    .m05-footer-form button{
+
+    .m05-footer-form button {
         width: 400px;
     }
+
     /* Fin m05 */
 
     /* Inicia Contacto */
     .contacto-nav ul {
-        padding: 20px; 
+        padding: 20px;
         font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        }
-    .contacto-footer-form input{
+    }
+
+    .contacto-footer-form input {
         width: 400px;
     }
-    .contacto-footer-form button{
+
+    .contacto-footer-form button {
         width: 400px;
     }
-    .contacto-main{
+
+    .contacto-main {
         display: grid;
-        grid-template-areas: 
-        "h1 h1"
-        "p form ";
+        grid-template-areas:
+            "h1 h1"
+            "p form ";
     }
+
     /* Inicia Sobre Mi */
-    .yo-main{
-        display: grid;
-        grid-template-areas: 
-        "yop yop yoimg" 
-        "yofotos yofotos yofotos";
+    .yo-nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
     }
-    .yo-main-caro1{
+
+    .yo-main {
+        display: grid;
+        grid-template-areas:
+            "yop yop yoimg"
+            "yofotos yofotos yofotos";
+    }
+
+    .yo-main-caro1 {
         display: flex;
         justify-content: flex-end;
-        align-content:flex-end
+        align-content: flex-end
     }
-    .yo-main-caro1 img{
+
+    .yo-main-caro1 img {
         width: 300px;
     }
-    .yo-footer-form input{
+
+    .yo-footer-form input {
         width: 400px;
     }
-    .yo-footer-form button{
+
+    .yo-footer-form button {
         width: 400px;
     }
-    .yo-main-p h1{
+
+    .yo-main-p h1 {
         font-size: 60px;
     }
-    .yo-main-p h2{
+
+    .yo-main-p h2 {
         font-size: 30px;
     }
-    
+
 }
+
 /* Fin media queries 768px */
 
-/* Inicia media queries 768px */
-@media screen and (min-width:1024px){
+/* Inicia media queries 1024px */
+@media screen and (min-width:1024px) {
+
     /* Inicia Sobre mi */
-    .yo-main-caro1 img{
+    .yo-main-caro1 img {
         width: 400px;
     }
 }
+
+// Fin media queries 1024
